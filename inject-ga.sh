@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-GA_ID="G-TGPZC1SWV6"
+GA_ID="G-KTKGB13SF7"
 MARKER="driveq-ga4"
 
 read -r -d '' GA_SNIPPET <<EOF || true
