@@ -1,0 +1,8 @@
+Dodaj u ovu mapu četiri datoteke koje si dostavio:
+
+1. driveq-hero.mp4  — glavni video za hero sekciju
+2. driveq-car.png   — fotografija automobila
+3. driveq-interior.png — fotografija interijera
+4. driveq-logo.png  — DriveQ logo
+
+Poželjno je kasnije optimizirati PNG slike u WebP, ali stranica je pripremljena da ih može koristiti i u PNG obliku ako tako ostanu spremljene.
