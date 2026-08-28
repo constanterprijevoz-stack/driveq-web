@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-GA_ID="G-KTKGB13SF7"
+GA_ID="G-KTKGBI3SF7"
 MARKER="driveq-ga4"
 
 read -r -d '' GA_SNIPPET <<EOF || true
@@ -23,7 +23,8 @@ read -r -d '' GA_SNIPPET <<EOF || true
 EOF
 
 while IFS= read -r -d '' file; do
-  if grep -q "${MARKER}" "$file"; then
+  # Do not inject a second GA tag into pages that already contain one.
+  if grep -q "${MARKER}" "$file" || grep -q "gtag('config', '${GA_ID}')" "$file"; then
     continue
   fi
   python3 - "$file" "$GA_SNIPPET" <<'PY'
